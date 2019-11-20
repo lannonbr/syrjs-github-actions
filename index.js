@@ -1,5 +1,5 @@
 function removeDupes(array) {
-  return "SyrJS";
+  return [...new Set(array)];
 }
 
 module.exports = removeDupes;
