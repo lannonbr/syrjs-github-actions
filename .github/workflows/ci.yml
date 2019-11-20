@@ -1,0 +1,12 @@
+name: CI
+on: [push]
+jobs:
+  tests:
+    runs-on: [ubuntu-18.04]
+    steps:
+      - name: 'Clone and checkout repo'
+        uses: actions/checkout@v1
+      - name: 'Install dependencies'
+        run: npm install
+      - name: 'Run tests'
+        run: npm run test
